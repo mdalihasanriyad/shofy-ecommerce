@@ -1,4 +1,10 @@
-import { bannerImageFour, bannerImageThree, bannerImageTwo } from "@/assets";
+import {
+  bannerImageFive,
+  bannerImageFour,
+  bannerImageSix,
+  bannerImageThree,
+  bannerImageTwo,
+} from "@/assets";
 import Container from "@/components/Container";
 import Button from "@/components/ui/Button";
 import Image from "next/image";
@@ -111,6 +117,14 @@ const Banner = async () => {
             </div>
           </div>
         </Container>
+      </div>
+      <div className="flex justify-between items-center bg-[#0989FF] py-20 h-[170px]">
+        <div className="opacity-40">
+          <Image src={bannerImageFive} alt="bannerImageFive" />
+        </div>
+        <div className="mr-44">
+          <Image src={bannerImageSix} alt="bannerImageSix" />
+        </div>
       </div>
     </div>
   );
