@@ -104,7 +104,7 @@ const Banner = async () => {
                 Samsung Galaxy Tab S6, Wifi Tablet
               </h2>
               <div className="mt-4">
-                <p className="underline  opacity-70"> $1240.00</p>
+                <p className="line-through  opacity-70"> $1240.00</p>
                 <h3 className="text-4xl font-semibold">$975.00</h3>
               </div>
               <Button className="mt-8 font-semibold rounded-lg bg-black text-white hover:bg-white hover:text-black duration-300">
@@ -119,11 +119,35 @@ const Banner = async () => {
         </Container>
       </div>
       <div className="flex justify-between items-center bg-[#0989FF] py-20 h-[170px]">
-        <div className="opacity-40">
-          <Image src={bannerImageFive} alt="bannerImageFive" />
+        <div className=" relative">
+          <Image
+            src={bannerImageFive}
+            alt="bannerImageFive"
+            className="opacity-40"
+          />
+          <div className="absolute top-12 left-24">
+            <p className="text-white uppercase text-base font-semibold">
+              Sale 20% off all store
+            </p>
+            <h2 className="text-4xl text-white font-bold opacity-100">
+              Subscribe our Newsletter
+            </h2>
+          </div>
         </div>
-        <div className="mr-44">
+        <div className="mr-44 relative">
           <Image src={bannerImageSix} alt="bannerImageSix" />
+          <div className="flex items-center justify-center absolute top-16 right-0">
+            <input
+              type="email"
+              placeholder="Enter your email"
+              className="outline-none px-10 py-4 rounded-l-xl"
+            />
+            <input
+              type="submit"
+              value="Subscribe"
+              className="px-8 py-4 rounded-r-xl bg-black text-white "
+            />
+          </div>
         </div>
       </div>
     </div>
