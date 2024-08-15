@@ -136,16 +136,16 @@ const Banner = async () => {
         </div>
         <div className="mr-44 relative">
           <Image src={bannerImageSix} alt="bannerImageSix" />
-          <div className="flex items-center justify-center absolute top-16 right-0">
+          <div className="flex items-center justify-center absolute top-16 -right-12">
             <input
               type="email"
               placeholder="Enter your email"
-              className="outline-none px-10 py-4 rounded-l-xl"
+              className="outline-none px-6 w-96 py-4 rounded-l-xl"
             />
             <input
               type="submit"
               value="Subscribe"
-              className="px-8 py-4 rounded-r-xl bg-black text-white "
+              className="px-8 py-4 rounded-r-xl cursor-pointer bg-black text-white "
             />
           </div>
         </div>
