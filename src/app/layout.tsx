@@ -9,7 +9,7 @@ import { Toaster } from "react-hot-toast";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Shofy - Multipurpose eCommerce website",
+  title: "Shofy | Multipurpose eCommerce website",
   description: "Test application for education purpose",
 };
 
