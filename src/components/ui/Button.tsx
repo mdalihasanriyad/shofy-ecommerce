@@ -6,9 +6,10 @@ interface Props {
   children: React.ReactNode;
   className?: string;
   href?: string;
+  onClick?: any;
 }
 
-const Button = ({ children, className, href }: Props) => {
+const Button = ({ children, className, href, onClick }: Props) => {
   return (
     <>
       {href ? (
@@ -23,7 +24,7 @@ const Button = ({ children, className, href }: Props) => {
         </Link>
       ) : (
         <button
-          onClick={() => console.log("button")}
+          onClick={onClick}
           className={twMerge(
             "bg-themeColor/80 text-white py-2 px-6 hover:bg-themeColor cursor-pointer duration-200",
             className
